@@ -35,7 +35,18 @@ h1, h2, h3, h4, h5, h6 {
   src: url("../fonts/a3c8a415c77c27fad9a1494194c949ca.eot"); 
   src: url("../fonts/a3c8a415c77c27fad9a1494194c949ca.eot?#iefix") format("embedded-opentype"), 
   url("../fonts/a3c8a415c77c27fad9a1494194c949ca.woff2") format("woff2"), url("../fonts/a3c8a415c77c27fad9a1494194c949ca.woff") format("woff"), 
-  url("../fonts/a3c8a415c77c27fad9a1494194c949ca.ttf") format("truetype"), url("../fonts/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnuHXg.woff2") format("woff2"); 
+  url("../fonts/a3c8a415c77c27fad9a1494194c949ca.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: "Cabin";
+  src: url("../fonts/Cabin-MediumItalic.ttf") format("ttf"), url("../fonts/Cabin-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf") format("ttf"), url("../fonts/Montserrat-Regular.woff") format("woff"),
+  url("../fonts/Montserrat-Italic.ttf") format("ttf"), url("../fonts/Montserrat-Italic.woff") format("woff");
 }
 
 /*--------------------------------------------------------------
@@ -123,7 +134,7 @@ aAdd audio
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #3B4D65;
+  border: 6px solid #005193;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -167,11 +178,36 @@ aAdd audio
   }
 
   .list-pesan p {
-    font-size: 18px !important;
+    font-size: 13px !important;
   }
 
   .giftHadiahText {
     font-size: 16px !important;
+  }
+
+  .pulse {
+    font-size: 10px !important;
+  }
+
+  #footer {
+    font-size: 11px !important;
+  }
+
+  #kirimPesan {
+    font-size: 12px !important;
+  }
+
+  .closing-container {
+    min-height: 360px; 
+  }
+
+  .closing {
+    background-image: linear-gradient(180deg,rgba(47, 47, 47, 0.25) 0%,rgba(47, 47, 47, 0.25) 100%), url('../img/DCIM/closing-media.jpg');
+    background-size: cover;
+  }
+
+  .closing-text p {
+    font-size: 12px;
   }
 
 }
@@ -197,12 +233,12 @@ aAdd audio
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.25) 0%,rgba(255, 255, 255, 0.25) 100%), url('../img/DCIM/DSC07668-Akad-media.jpg');
     background-size: cover;
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(73, 73, 73, 0.25) 0%,rgba(73, 73, 73, 0.25) 100%), url('../img/DCIM/DSC080252-media.jpg');
     background-size: cover;
   }
 
@@ -211,7 +247,7 @@ aAdd audio
   }
 
   .list-pesan p {
-    font-size: 18px !important;
+    font-size: 13px !important;
   }
 
   .list-pesan strong {
@@ -220,6 +256,31 @@ aAdd audio
 
   .giftHadiahText {
     font-size: 16px !important;
+  }
+
+  .pulse {
+    font-size: 10px !important;
+  }
+
+  #footer {
+    font-size: 11px !important;
+  }
+
+  #kirimPesan {
+    font-size: 12px !important;
+  }
+
+  .closing-container {
+    min-height: 360px; 
+  }
+
+  .closing {
+    background-image: linear-gradient(180deg,rgba(47, 47, 47, 0.25) 0%,rgba(47, 47, 47, 0.25) 100%), url('../img/DCIM/closing-media.jpg');
+    background-size: cover;
+  }
+
+  .closing-text p {
+    font-size: 12px;
   }
 }
 
@@ -367,8 +428,8 @@ aAdd audio
 }
 
 #hero .desc {
-  font-size: 25px;
-  font-family: 'Pompiere', cursive;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
   line-height: normal;
   letter-spacing: 2.5px;
 }
@@ -406,11 +467,15 @@ aAdd audio
     line-height: 24px;
   }
   #hero .desc {
-    font-size: 18px;
+    font-size: 12px;
+  }
+
+  .tulisan-pernikahan {
+    font-size: 20px !important;
   }
 
   .list-pesan p {
-    font-size: 18px !important;
+    font-size: 13px !important;
   }
 
   .list-pesan strong {
@@ -419,6 +484,31 @@ aAdd audio
 
   .giftHadiahText {
     font-size: 16px !important;
+  }
+
+  .pulse {
+    font-size: 10px !important;
+  }
+
+  #footer {
+    font-size: 11px !important;
+  }
+
+  #kirimPesan {
+    font-size: 12px !important;
+  }
+
+  .closing-container {
+    min-height: 360px; 
+  }
+
+  .closing {
+    background-image: linear-gradient(180deg,rgba(47, 47, 47, 0.25) 0%,rgba(47, 47, 47, 0.25) 100%), url('../img/DCIM/closing-media.jpg');
+    background-size: cover;
+  }
+
+  .closing-text p {
+    font-size: 12px;
   }
 }
 
@@ -436,13 +526,13 @@ section {
 }
 .section-title h2 {
   font-size: 50px;
-  font-family: 'Pompiere', cursive !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #ffffff;
+  color: #005193;
 }
 .section-title h2::before {
   content: "";
@@ -468,7 +558,7 @@ section {
   margin-bottom: 0;
   font-family: "Itim", cursive;
   font-size: 20px;
-  color: #fff;
+  color: #272829;
 }
 
 
@@ -555,11 +645,47 @@ section {
   font-size: 20px;
 }
 
+/**
+# Closing
+*/
+
+.closing {
+  background-image: linear-gradient(180deg,rgba(47, 47, 47, 0.25) 0%,rgba(47, 47, 47, 0.25) 100%), url('../img/DCIM/closing.jpg');
+  background-size: cover;
+  padding: 0;
+}
+
+.closing-container {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.closing-text {
+  margin-top: auto;
+}
+
+.closing-text h2 {
+  line-height: 0.25 !important;
+  font-family: 'monoline signature', sans-serif;
+  color: #fff;
+}
+
+.closing-text p {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
 .facts {
-  background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633.jpg');
+  background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/DSC080252.jpg');
   background-size: cover;
 }
 .facts .count-box {
@@ -618,11 +744,11 @@ section {
 
 @media (max-width: 992px) {
   .section-title h2 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .section-title p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .about h3 {
@@ -642,7 +768,7 @@ section {
   }
 
   .list-pesan p {
-    font-size: 18px !important;
+    font-size: 13px !important;
   }
 
   .list-pesan strong {
@@ -689,13 +815,38 @@ section {
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.25) 0%,rgba(255, 255, 255, 0.25) 100%), url('../img/DCIM/DSC07668-Akad-media.jpg');
     background-size: cover;
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(73, 73, 73, 0.25) 0%,rgba(73, 73, 73, 0.25) 100%), url('../img/DCIM/DSC080252-media.jpg');
     background-size: cover;
+  }
+
+  .pulse {
+    font-size: 10px !important;
+  }
+
+  #footer {
+    font-size: 11px !important;
+  }
+
+  #kirimPesan {
+    font-size: 12px !important;
+  }
+
+  .closing-container {
+    min-height: 360px; 
+  }
+
+  .closing {
+    background-image: linear-gradient(180deg,rgba(47, 47, 47, 0.25) 0%,rgba(47, 47, 47, 0.25) 100%), url('../img/DCIM/closing-media.jpg');
+    background-size: cover;
+  }
+
+  .closing-text p {
+    font-size: 12px;
   }
 }
 
@@ -703,7 +854,7 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills {
-  background-image: url('../img/DCIM/STRQ0607.jpg');
+  background-image: url('../img/DCIM/DSC07668-Akad.jpg');
   background-size: cover;
   border-top-style: double;
   border-top-width: 15px;
@@ -752,13 +903,13 @@ section {
 }
 
 .skills .akad {
-  background-image: linear-gradient(180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('../img/DCIM/STRQ0862.jpg');
+  background-color: rgba(255, 255, 255, 0.75);
   background-position: top center;
   background-size: cover;
 }
 
 .skills .resepsi {
-  background-image: linear-gradient(180deg,rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 100%), url('../img/DCIM/STRQ0752.jpg');
+  background-color: rgba(255,255,255,0.80);
   background-position: top center;
   background-size: cover;
 }
@@ -767,12 +918,12 @@ section {
   margin: 0;
   font-size: 45px;
   font-family: "monoline signature", sans-serif;
-  color: #7b8752 !important;
+  color: #005193 !important;
 }
 
 .skills .count-box p {
   font-family: "Itim", cursive;
-  color: #000 !important;
+  color: #272829 !important;
   font-size: 20px;
 }
 
@@ -792,7 +943,7 @@ section {
 # Amplop
 --------------------------------------------------------------*/
 .amplop {
-  background: #9AA086;
+  background: #005193;
   color: #fff;
 }
 
@@ -819,17 +970,21 @@ section {
 }
 
 .btn-confirm {
-  background-color: #3B4D65 !important;
+  background-color: #005193 !important;
   border-radius: 7.5px;
 }
 
 .btn-success {
-  border-color: #3B4D65 !important;
+  border-color: #005193 !important;
   border-radius: 50px;
 }
 
 #modalConfirm {
   color: darkslategray !important;
+}
+
+#kirimPesan {
+  font-size: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -1281,7 +1436,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  background-color: #3B4D65;
+  background-color: #005193;
   background-repeat: repeat;
 }
 .contact .info {
@@ -1392,7 +1547,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background-color: #243348;
+  background-color: #2e4a72;
   background-size: cover;
   color: #fff;
   font-size: 14px;
@@ -1453,7 +1608,7 @@ section {
 
 .modal-background:before {
   content: "";
-  background: #000;
+  background: #272829;
   opacity: 0.5;
   position: absolute;
   bottom: 0;
@@ -1466,7 +1621,7 @@ section {
   font-size: 50;
   font-weight: 500;
   line-height: 56px;
-  color: #d2d39b!important;
+  color: #fff!important;
   font-family: "monoline signature", Sans-serif;
 }
 
@@ -1475,12 +1630,17 @@ section {
   font-family: "Cabin", sans-serif;
   font-style: italic;
   color: #ffffff !important;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.modal-background h3 {
+  font-family: 'Cabin', sans-serif;
+  color: #ffffff !important;
 }
 
 .modal-background strong {
   font-size: 35px;
-  font-family: 'Square Peg', cursive;
+  font-family: 'Cabin', sans-serif;
   color: #ffffff !important;
 }
 
@@ -1513,7 +1673,7 @@ section {
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.25) 0%,rgba(255, 255, 255, 0.25) 100%), url('../img/DCIM/DSC07668-Akad-media.jpg');
     background-size: cover;
   }
 
@@ -1526,7 +1686,7 @@ section {
   }
 
   .list-pesan p {
-    font-size: 18px !important;
+    font-size: 13px !important;
   }
 
   .list-pesan strong {
@@ -1538,13 +1698,39 @@ section {
   }
 
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(73, 73, 73, 0.25) 0%,rgba(73, 73, 73, 0.25) 100%), url('../img/DCIM/DSC080252-media.jpg');
     background-size: cover;
   }
 
   .services {
     background-repeat: repeat;
   }
+
+  .pulse {
+    font-size: 10px !important;
+  }
+
+  #footer {
+    font-size: 11px !important;
+  }
+
+  #kirimPesan {
+    font-size: 12px !important;
+  }
+
+  .closing-container {
+    min-height: 360px; 
+  }
+
+  .closing {
+    background-image: linear-gradient(180deg,rgba(47, 47, 47, 0.25) 0%,rgba(47, 47, 47, 0.25) 100%), url('../img/DCIM/closing-media.jpg');
+    background-size: cover;
+  }
+
+  .closing-text p {
+    font-size: 12px;
+  }
+
 }
 
 .icon-cover-image {
@@ -1589,7 +1775,7 @@ section {
   }
 
   .skills {
-    background-image: url('../img/DCIM/STRQ0607-media.jpg');
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.25) 0%,rgba(255, 255, 255, 0.25) 100%), url('../img/DCIM/DSC07668-Akad-media.jpg');
     background-size: cover;
   }
 
@@ -1602,7 +1788,7 @@ section {
   }
 
   .list-pesan p {
-    font-size: 16px !important;
+    font-size: 13px !important;
   }
 
   .list-pesan strong {
@@ -1613,8 +1799,12 @@ section {
     font-size: 16px !important;
   }
 
+  .pulse {
+    font-size: 10px !important;
+  }
+
   .facts {
-    background-image: linear-gradient(180deg,rgba(142, 142, 142, 0.25) 0%,rgba(142, 142, 142, 0.25) 100%), url('../img/DCIM/STRQ0633-media.jpg');
+    background-image: linear-gradient(180deg,rgba(73, 73, 73, 0.25) 0%,rgba(73, 73, 73, 0.25) 100%), url('../img/DCIM/DSC080252-media.jpg');
     background-size: cover;
   }
 
@@ -1637,76 +1827,92 @@ section {
     margin: 0;
     font-size: 15px;
   }
+
+  #footer {
+    font-size: 11px !important;
+  }
+
+  #kirimPesan {
+    font-size: 12px !important;
+  }
+
+  .closing-container {
+    min-height: 360px; 
+  }
+
+  .closing-text p {
+    font-size: 12px;
+  }
   
 }
 
 .pulse {
-  background-color: #3B4D65!important;
+  background-color: #005193!important;
   color: #ffffff;
   border: none;
   border-radius: 20px;
   padding: 10px 30px;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 0 0 rgba(103, 204, 44, 0.4);
+  box-shadow: 0 0 0 rgba(35, 90, 200, 0.4);
   /* animation: pulse 2s infinite; */
 }
 .pulse:hover {
-  background-color: #3f7856fc;
+  background-color: #316ccafc;
   color: #ffffff;
-  box-shadow: 0 0 0 rgba(103, 204, 44, 0.4);
+  box-shadow: 0 0 0 rgba(35, 90, 200, 0.4);
   /* animation: pulse 2s linear infinite; */
 }
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -webkit-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0.4);
   }
   70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      -webkit-box-shadow: 0 0 0 10px rgba(35, 90, 200, 0);
   }
   100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      -webkit-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0);
   }
 }
 
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
-    box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0.4);
+    box-shadow: 0 0 0 0 rgba(35, 90, 200, 0.4);
   }
   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
-      box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 10px rgba(35, 90, 200, 0);
+      box-shadow: 0 0 0 10px rgba(35, 90, 200, 0);
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
-      box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0);
+      box-shadow: 0 0 0 0 rgba(35, 90, 200, 0);
   }
 }
 
 @-moz-keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -moz-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0.4);
   }
   70% {
-      -moz-box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 10px rgba(35, 90, 200, 0);
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
+      -moz-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0);
   }
 }
 
 @-o-keyframes pulse {
   0% {
-    -o-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0.4);
+    -o-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0.4);
   }
   70% {
-      -o-box-shadow: 0 0 0 10px rgba(103, 204, 44, 0);
+      -o-box-shadow: 0 0 0 10px rgba(35, 90, 200, 0);
   }
   100% {
-      -o-box-shadow: 0 0 0 0 rgba(103, 204, 44, 0);
+      -o-box-shadow: 0 0 0 0 rgba(35, 90, 200, 0);
   }
 }
 
@@ -1716,10 +1922,10 @@ section {
   border-bottom-right-radius: 200px;
   border-top-left-radius: 500px;
   border-top-right-radius: 500px;
-  border: #9AA086;
+  border: #005193;
   border-width: 10px 10px 15px 10px;
   border-style: solid;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
 }
 
 .nama-pasangan {
@@ -1736,7 +1942,7 @@ section {
 }
 
 .btn-instagram {
-  background-color: #9AA086;
+  background-color: #005193;
 }
 
 .btn-circle {
@@ -1752,7 +1958,7 @@ section {
 
 .hr-acara-pernikahan {
   width: 40%;
-  border: 0.5px solid #7b8752;
+  border: 0.5px solid #005193;
   margin: 0 auto;
 }
 
@@ -1781,8 +1987,8 @@ section {
 }
 
 .btn-info {
-  background-color: #9AA086 !important;
-  border-color: #9AA086 !important;
+  background-color: #005193 !important;
+  border-color: #005193 !important;
 }
 
 .form-guest-book {
@@ -1801,8 +2007,8 @@ section {
 }
 
 .list-pesan p {
-  font-size: 21px;
-  font-family: 'Pompiere', cursive !important;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .list-pesan strong {
@@ -1849,8 +2055,8 @@ body {
 
 .tulisan-pernikahan {
   margin-bottom: 45px !important;
-  font-family: 'Pompiere', cursive !important;
-  font-size: 50px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 25px !important;
 }
 
 .giftHadiahText {

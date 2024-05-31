@@ -52,7 +52,7 @@
 </button> -->
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content modal-background">
       <div class="modal-body row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -61,21 +61,22 @@
             <img src="assets/img/DCIM/cover-kecil.jpg" alt="" class="icon-cover-image">
           </div>
           <div class="col-lg-12 mt-3">
-            <h1 class="coupleNameTitle"></h1>
+            <h3>Pernikahan</h3>
+            <h1 class="coupleNameTitle mt-5"></h1>
             <p class="Kepada mt-3">Kepada Bapak/Ibu/Saudara/i</p>
             <strong id="guestName"></strong>
             <p id="guestCategory" style="font-size: 30px;"></p>
             <p id="guideline" style="font-size: 25px;"></p>
           </div>
           <div class="col-lg-12 mt-4">
-            <button type="button" id="btnOpenInvitation" class="btn btn-default pulse"  data-mdb-animation="slide-out-right" data-bs-dismiss="modal"><i class="fa-solid fa-envelope fa-beat"></i> Buka Undangan</button>
+            <button type="button" id="btnOpenInvitation" class="btn btn-default pulse"  data-mdb-animation="slide-out-right" data-bs-dismiss="modal"><i class="fa-solid fa-envelope fa-beat"></i> &nbsp; Buka Undangan</button>
           </div>
         </div>
         
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -304,7 +305,7 @@
 
         <div class="row">
 
-          <div class="col-lg-6 mx-auto" style="color: darkslategray;">
+          <div class="col-lg-6 mx-auto" style="color: #272829;">
             <div class="count-box">
               <h5 class="mt-2">Hitung Mundur Menuju</h5>
               <h2 class="mt-4">Hari Bahagia</h2>
@@ -522,8 +523,8 @@
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Doa & Ucapan</h2>
-          <p class="descDoaUcapan"></p>
+          <h2 style="color: #fff;">Doa & Ucapan</h2>
+          <p class="descDoaUcapan" style="color: #fff;"></p>
         </div>
 
         <div class="col-lg-12">
@@ -549,6 +550,17 @@
         </div>
       </div>
     </section><!-- End Contact Section -->
+
+    <section id="/closing" class="closing">
+      <div class="container closing-container" data-aos="fade-up">
+        <div class="text w-100 text-center closing-text">
+          <p style="margin-bottom: 2rem !important;">Two souls become one, two hearts beats as one</p>
+          <h2>Rani & Irwan</h2>
+          <p style="margin-top: 1rem !important;">Thank you</p>
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
 
     <!-- ======= Services Section ======= -->
     <!-- <section id="services" class="services">
@@ -696,18 +708,18 @@
   
       let tulisanPernikahan = "";
       if (data.wedding_event_type == 'NGUNDUH_MANTU') {
-        tulisanPernikahan = "Ngunduh Mantu";
+        tulisanPernikahan = "NGUNDUH MANTU";
       } else {
-        tulisanPernikahan = "Pernikahan";
+        tulisanPernikahan = "PERNIKAHAN";
       };
   
-      $(".descHero").html(`Tanpa mengurangi rasa hormat,<br>Kami mengundang Bapak/Ibu/Saudara/i<br>Untuk hadir di acara ${tulisanPernikahan} kami.`);
-      $(".descPengantin").html(`Dengan memohon rahmat dan ridha Allah SWT, perkenankan kami mengundang Bapak/Ibu/Saudara/i ke acara ${tulisanPernikahan} kami:`);
-      $(".descAcaraPernikahan").html(`Dengan memohon Rahmat Allah Subhanahu wa Ta’ala dan dengan segenap kerendahan hati, perkenankanlah kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara ${tulisanPernikahan} kami yang akan dilaksanakan pada:`);
+      $(".descHero").html(`Tanpa mengurangi rasa hormat,<br>Kami mengundang Bapak/Ibu/Saudara/i<br>Untuk hadir di acara ${tulisanPernikahan.toLowerCase()} kami.`);
+      $(".descPengantin").html(`Dengan memohon rahmat dan ridha Allah SWT, perkenankan kami mengundang Bapak/Ibu/Saudara/i ke acara ${tulisanPernikahan.toLowerCase()} kami:`);
+      $(".descAcaraPernikahan").html(`Dengan memohon Rahmat Allah Subhanahu wa Ta’ala dan dengan segenap kerendahan hati, perkenankanlah kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara ${tulisanPernikahan.toLowerCase()} kami yang akan dilaksanakan pada:`);
       $(".tulisan-pernikahan").html(tulisanPernikahan);
       $(".descDoaUcapan").html("Suatu kebahagiaan bagi kami sekeluarga apabila berkenan hadir untuk memberikan doa restu kepada kami.");
       $('#song').html(`<source src="./assets/audio/sound.mp3" type="audio/mp3"">`);
-      $('#songTitle').html('Song by Ghea Indrawari - Rasa Cinta Ini');
+      $('#songTitle').html("Song by George Benson (Christian Ama Saxophone Cover) - Nothing's Gonna Change My Love for You");
   
       // Couple information
       $("#groomName").html(data.groom_name);
@@ -741,7 +753,7 @@
       const tanggalAkad = moment(akad.event_date);
       $("#acaraTitle").html(`Acara ${tulisanPernikahan}`);
       $("#tanggalAkad").html(tanggalAkad.locale('id').format('dddd, DD MMMM YYYY'));
-      $("#waktuAkad").html(`${tanggalAkad.locale('id').format('HH:mm')} WIB - 12.00 WIB`);
+      $("#waktuAkad").html(`${tanggalAkad.locale('id').format('HH:mm')} WIB - Selesai`);
       $("#lokasiAkad").html(akad.location);
       $("#alamatAkad").html(akad.address);
   
@@ -752,7 +764,7 @@
         const tanggalSyukuran = moment(syukuran.event_date);
         $("#titleSyukuran").html("Resepsi");
         $("#tanggalSyukuran").html(tanggalSyukuran.locale('id').format('dddd, DD MMMM YYYY'));
-        $("#waktuSyukuran").html(`${tanggalSyukuran.locale('id').format('HH:mm')} WIB - Selesai`);
+        $("#waktuSyukuran").html(`${tanggalSyukuran.locale('id').format('HH:mm')} WIB - 14.00 WIB`);
         $("#lokasiSyukuran").html(syukuran.location);
         $("#alamatSyukuran").html(syukuran.address);
       }
@@ -985,9 +997,7 @@
           /* Read more about handling dismissals below */
           if (result.dismiss === Swal.DismissReason.timer) {
             Swal.fire({
-              imageUrl: 'assets/img/swal.png',
-              imageWidth: 200,
-              imageHeight: 200,
+              icon: "success",
               timer: 2000,
               title: 'Terimakasih',
               showCloseButton: false,
@@ -1075,9 +1085,7 @@
             })
           } else {
             Swal.fire({
-              imageUrl: 'assets/img/swal.png',
-              imageWidth: 200,
-              imageHeight: 200,
+              icon: "success",
               timer: 1500,
               title: 'Sukses',
               showCloseButton: false,

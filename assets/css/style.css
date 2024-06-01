@@ -1189,6 +1189,15 @@ section {
   right: 15px;
 }
 
+.card {
+  border: none;
+}
+
+.card-img-top {
+  border-radius: 15px;
+  object-fit: cover;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/

@@ -546,7 +546,7 @@
       <div class="container closing-container" data-aos="fade-up">
         <div class="text w-100 text-center closing-text">
           <p style="margin-bottom: 2rem !important;">Two souls become one, two hearts beats as one</p>
-          <h2>Rani & Irwan</h2>
+          <h2 id="footerPengantinText"></h2>
           <p style="margin-top: 1rem !important;">Thank you</p>
         </div>
 
@@ -688,22 +688,29 @@
       let guestCategory = "";
       if (data != null) {
         coupleName = `${data.bride_name} & ${data.groom_name}`;
+        if (data.wedding_event_type == 'NGUNDUH_MANTU') {
+          coupleName = `${data.groom_name} & ${data.bride_name}`;
+        }
         guestName = data.guest_name;
         guestCategory = data.category;
       } else {
         $('#btnOpenInvitation').remove();
       }
+
       $(".coupleNameTitle").html(coupleName).attr("class", "mt-4");
       $("#guestName").html(guestName);
       $("#guestCategory").html(guestCategory);
   
       let tulisanPernikahan = "";
+      let footerPengantinText = "";
       if (data.wedding_event_type == 'NGUNDUH_MANTU') {
         tulisanPernikahan = "NGUNDUH MANTU";
+        footerPengantinText = `${data.groom_name} & ${data.bride_name}`;
       } else {
         tulisanPernikahan = "PERNIKAHAN";
+        footerPengantinText = `${data.bride_name} & ${data.groom_name}`;
       };
-  
+
       $(".descHero").html(`Tanpa mengurangi rasa hormat,<br>Kami mengundang Bapak/Ibu/Saudara/i<br>Untuk hadir di acara ${tulisanPernikahan.toLowerCase()} kami.`);
       $(".descPengantin").html(`Dengan memohon rahmat dan ridha Allah SWT, perkenankan kami mengundang Bapak/Ibu/Saudara/i ke acara ${tulisanPernikahan.toLowerCase()} kami:`);
       $(".descAcaraPernikahan").html(`Dengan memohon Rahmat Allah Subhanahu wa Ta’ala dan dengan segenap kerendahan hati, perkenankanlah kami mengundang Bapak/Ibu/Saudara/i untuk hadir di acara ${tulisanPernikahan.toLowerCase()} kami yang akan dilaksanakan pada:`);
@@ -711,7 +718,7 @@
       $(".descDoaUcapan").html("Suatu kebahagiaan bagi kami sekeluarga apabila berkenan hadir untuk memberikan doa restu kepada kami.");
       $('#song').html(`<source src="./assets/audio/sound.mp3" type="audio/mp3"">`);
       $('#songTitle').html("Song by George Benson (Christian Ama Saxophone Cover) - Nothing's Gonna Change My Love for You");
-  
+      $("#footerPengantinText").html(footerPengantinText);
 
       const groomDetail = data.details.find(detail => detail.detail_type == 'GROOM');
       const brideDetail = data.details.find(detail => detail.detail_type == 'BRIDE');
@@ -769,8 +776,8 @@
       let mapLocation = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15815.984209015525!2d109.0402481!3d-7.6835706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e656d261b43daed%3A0x19a4329426d8ccc7!2sGedung%20(%20IPHI%20)!5e0!3m2!1sid!2sid!4v1717084514751!5m2!1sid!2sid";
       var openTheMap = "https://www.google.com/maps/place/Gedung+(+IPHI+)/@-7.6835706,109.0402481,15z/data=!4m6!3m5!1s0x2e656d261b43daed:0x19a4329426d8ccc7!8m2!3d-7.6835706!4d109.0402481!16s%2Fg%2F11b6d05yr2?entry=ttu";
       if (data.wedding_event_type == 'NGUNDUH_MANTU') {
-        mapLocation = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15815.984209015525!2d109.0402481!3d-7.6835706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e656d261b43daed%3A0x19a4329426d8ccc7!2sGedung%20(%20IPHI%20)!5e0!3m2!1sid!2sid!4v1717084514751!5m2!1sid!2sid";
-        openTheMap = "https://www.google.com/maps/place/Gedung+(+IPHI+)/@-7.6835706,109.0402481,15z/data=!4m6!3m5!1s0x2e656d261b43daed:0x19a4329426d8ccc7!8m2!3d-7.6835706!4d109.0402481!16s%2Fg%2F11b6d05yr2?entry=ttu";
+        mapLocation = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.5115230570614!2d109.06073542851676!3d-7.678194099519162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e656cc474a4d53d%3A0x3cc9a261ba20e251!2sJl.%20Landak%20Timur%20No.38%2C%20Limbangan%2C%20Mertasinga%2C%20Kec.%20Cilacap%20Utara%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah%2053274!5e0!3m2!1sid!2sid!4v1717254708214!5m2!1sid!2sid";
+        openTheMap = "https://www.google.com/maps/place/Jl.+Landak+Timur+No.38,+Limbangan,+Mertasinga,+Kec.+Cilacap+Utara,+Kabupaten+Cilacap,+Jawa+Tengah+53274/@-7.6781941,109.0607354,19z/data=!3m1!4b1!4m5!3m4!1s0x2e656cc474a4d53d:0x3cc9a261ba20e251!8m2!3d-7.6781941!4d109.0613805?entry=ttu";
       }
       
       const akad = data.event_details.find(eventDetail => eventDetail.event_type == 'AKAD');
@@ -781,12 +788,15 @@
       $("#lokasiAkad").html(akad.location);
       $("#alamatAkad").html(akad.address);
 
+      
+      const syukuran = data.event_details.find(eventDetail => eventDetail.event_type == 'RESEPSI');
+      const ngunduhMantu = data.event_details.find(eventDetail => eventDetail.event_type == 'NGUNDUH_MANTU');
+      const tanggalSyukuran = moment(syukuran.event_date);
+      const tanggalNgunduhMantu = moment(ngunduhMantu.event_date);
       if (data.wedding_event_type == 'NGUNDUH_MANTU') {
-        const ngunduhMantu = data.event_details.find(eventDetail => eventDetail.event_type == 'NGUNDUH_MANTU');
         if (ngunduhMantu) {
           $("#boxNgunduhMantu").show();
           $("#boxResepsi").hide();
-          const tanggalNgunduhMantu = moment(ngunduhMantu.event_date);
           $("#titleNgunduhMantu").html("Ngunduh Mantu");
           $("#tanggalNgunduhMantu").html(tanggalNgunduhMantu.locale('id').format('dddd, DD MMMM YYYY'));
           $("#waktuNgunduhMantu").html(`${tanggalNgunduhMantu.locale('id').format('HH:mm')} WIB - Selesai`);
@@ -794,11 +804,9 @@
           $("#alamatNgunduhMantu").html(ngunduhMantu.address);
         }
       } else {
-        const syukuran = data.event_details.find(eventDetail => eventDetail.event_type == 'RESEPSI');
         if (tanggalSyukuran) {
           $("#boxNgunduhMantu").hide();
           $("#boxResepsi").show();
-          const tanggalSyukuran = moment(syukuran.event_date);
           $("#titleSyukuran").html("Resepsi");
           $("#tanggalSyukuran").html(tanggalSyukuran.locale('id').format('dddd, DD MMMM YYYY'));
           $("#waktuSyukuran").html(`${tanggalSyukuran.locale('id').format('HH:mm')} WIB - 14.00 WIB`);
@@ -820,7 +828,11 @@
         const now = new Date().getTime();
           
         // Find the distance between now and the count down date
-        const distance = tanggalAkad.valueOf() - now;
+        let distance = tanggalAkad.valueOf() - now;
+
+        if (data.wedding_event_type == 'NGUNDUH_MANTU') {
+          distance = tanggalNgunduhMantu.valueOf() - now;
+        }
           
         // Time calculations for days, hours, minutes and seconds
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
